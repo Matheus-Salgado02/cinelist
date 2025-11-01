@@ -1,0 +1,84 @@
+.movie-card {
+  flex: 0 0 200px;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 8px;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+}
+
+.movie-card.highlighted {
+  border: 3px solid #ff6b6b;
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+}
+
+.poster-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1f2937, #111827);
+}
+
+.poster {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center center;
+  border-radius: 8px;
+}
+
+.poster.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.user-rating-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.95), rgba(245, 158, 11, 0.95));
+  color: #000;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.user-rating-badge .rating-star {
+  font-size: 16px;
+  color: #000;
+}
+
+.user-rating-badge .rating-number {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.movie-card .movie-title {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #a8b0b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+}

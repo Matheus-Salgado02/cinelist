@@ -1,0 +1,70 @@
+.movies-row {
+  margin-bottom: 40px;
+}
+
+.row-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* keep title aligned left */
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.row-title, .row-header h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.row-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #9ca3af;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.row-list {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
+}
+
+.row-list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.row-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.row-list::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 3px;
+}
+
+.row-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.2);
+}
+
