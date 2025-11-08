@@ -5,7 +5,7 @@
 */
 
 const STORAGE_KEY = 'cinelist_auth';
-const API_BASE = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3333';
+const API_BASE = import.meta.env.VITE_BACKEND_URL || 'https://cinelist-apen.onrender.com';
 
 async function apiRequest(path, options = {}) {
   const url = `${API_BASE}${path}`;
